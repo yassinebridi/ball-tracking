@@ -7,11 +7,11 @@ import time
 
 vs = VideoStream(src=1).start()
 
-blueLower = np.array([110, 50, 50])
-blueUpper = np.array([130, 255, 255])
+blueLower = np.array([99, 104, 86])
+blueUpper = np.array([128, 188, 176])
 
-yellowLower = np.array([22, 93, 0])
-yellowUpper = np.array([45, 255, 255])
+yellowLower = np.array([22, 101, 100])
+yellowUpper = np.array([39, 255, 255])
 
 yellowBounds = (yellowLower, yellowUpper)
 blueBounds = (blueLower, blueUpper)
