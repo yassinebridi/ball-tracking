@@ -7,11 +7,11 @@ import time
 
 vs = VideoStream(src=1).start()
 
-blueLower = np.array([99, 104, 86])
-blueUpper = np.array([128, 188, 176])
+blueLower = np.array([82, 99, 87])
+blueUpper = np.array([140, 255, 255])
 
-yellowLower = np.array([22, 101, 100])
-yellowUpper = np.array([39, 255, 255])
+yellowLower = np.array([20, 35, 113])
+yellowUpper = np.array([47, 157, 213])
 
 yellowBounds = (yellowLower, yellowUpper)
 blueBounds = (blueLower, blueUpper)
@@ -20,10 +20,10 @@ blueBounds = (blueLower, blueUpper)
 def loop(colorBounds, iterator):
     counter = 0
 
-    text_found_ball = "Ball found"
-    text_caught = "Ball caught"
-    text_found_goal = "Goal found"
-    text_scorred = "Ball scorred"
+    text_found_ball = "Balle détectée"
+    text_caught = "Balle attrape"
+    text_found_goal = "But détectée"
+    text_scorred = "Balle marqué"
 
     while True:
         frame = vs.read()
