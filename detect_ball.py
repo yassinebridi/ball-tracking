@@ -5,13 +5,13 @@ import imutils
 import itertools
 import time
 
-vs = VideoStream(src=1).start()
+vs = VideoStream(src=0).start()
 
 blueLower = np.array([82, 99, 87])
 blueUpper = np.array([140, 255, 255])
 
-yellowLower = np.array([20, 35, 113])
-yellowUpper = np.array([47, 157, 213])
+yellowLower = np.array([25, 90, 119])
+yellowUpper = np.array([67, 255, 255])
 
 yellowBounds = (yellowLower, yellowUpper)
 blueBounds = (blueLower, blueUpper)
